@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#101820">
+  <title>Santhé Rentals</title>
+  <link rel="icon" type="image/png" href="./santhe-favicon.png">
+  <meta name="description" content="Find your perfect rental car and arrange your booking with DriveEase.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://images.unsplash.com">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#home" aria-label="Santhé Rentals home">
+  <img class="brand-logo" src="santhe-logo.png" alt="Santhé Luxury Car Rentals">
+  <span>Santhé <span>Rentals</span></span>
+</a>
+   
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="nav" id="nav">
+      <a href="#home">Home</a>
+      <a href="#cars">Our Cars</a>
+      <a href="#how-it-works">How It Works</a>
+      <a href="#contact">Contact</a>
+      <a class="nav-cta" href="#booking">Book a Car <span>↗</span></a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+       
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR JOURNEY, YOUR WAY</p>
+        <h1>Find the right luxury car<br>for <em>every journey.</em></h1>
+        <p class="hero-copy">Affordable, Comfortable and convenient car rentals for your everyday plans, weekend escapes and special occasions.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#cars">Explore our cars <span>→</span></a>
+          <a class="button button-ghost" href="tel:0760579428">Call 076 057 9428</a>
+        </div>
+        <div class="hero-note"><span class="status-dot"></span> Choose your car. Pick your dates. Arrange your booking.</div>
+      </div>
+      <div class="hero-badge"><strong>Easy</strong><span>booking<br>enquiries</span></div>
+    </section>
+
+    <section class="quick-search" aria-label="Quick booking search">
+      <div class="search-intro"><span class="search-icon">⌕</span><div><strong>Ready to get moving?</strong><small>Start planning your rental</small></div></div>
+      <div class="search-field"><label for="quickPickup">Pickup date</label><input id="quickPickup" type="date"></div>
+      <div class="search-field"><label for="quickReturn">Return date</label><input id="quickReturn" type="date"></div>
+      <button class="button button-dark" id="findCarBtn">Find a car <span>→</span></button>
+    </section>
+
+    <section class="section cars-section" id="cars">
+      <div class="section-heading">
+        <div><p class="eyebrow dark-eyebrow">OUR FLEET</p><h2>Choose your <em>ride.</em></h2></div>
+        <p class="section-description">From city drives to family trips, find a car that fits your plans.</p>
+      </div>
+      <div class="filter-row" role="group" aria-label="Filter cars">
+        <button class="filter active" data-filter="all">All cars</button>
+        <button class="filter" data-filter="economy">Economy</button>
+        <button class="filter" data-filter="sedan">Sedan</button>
+        <button class="filter" data-filter="suv">SUV</button>
+      </div>
+      <div class="car-grid">
+        <article class="car-card" data-category="economy">
+          <div class="car-image"><img src="fit-economy.png" alt="Silver compact car on a road" loading="lazy"><span class="car-type">ECONOMY</span></div>
+          <div class="car-info"><div class="car-title"><h3>Fit Shuttle 2012</h3><span class="car-price">LKR <b>9,000</b><small>/ day</small></span></div><div class="car-specs"><span>♙ 4 seats</span><span>⚙ Automatic</span><span>⛽ Petrol</span></div><p>Easy to drive and ideal for everyday city trips.</p><button class="button button-outline choose-car" data-car="Suzuki Alto">Choose this car <span>→</span></button></div>
+        </article>
+        <article class="car-card" data-category="sedan">
+          <div class="car-image"><img src="audi-sedan.jpeg" alt="Modern luxury sedan" loading="lazy"><span class="car-type">SEDAN</span></div>
+          <div class="car-info"><div class="car-title"><h3>Audi A6</h3><span class="car-price">LKR <b>18,000</b><small>/ day</small></span></div><div class="car-specs"><span>♙ 5 seats</span><span>⚙ Automatic</span><span>⛽ Diesel</span></div><p>A luxury option for comfortable and long journeys with good fuel efficency.</p><button class="button button-outline choose-car" data-car="Toyota Axio">Choose this car <span>→</span></button></div>
+        </article>
+       <!--  <article class="car-card" data-category="suv">
+          <div class="car-image"><img src="https://images.unsplash.com/photo-1519641471654-76ce0107ad1b?auto=format&fit=crop&w=1000&q=85" alt="SUV parked outdoors" loading="lazy"><span class="car-type">SUV</span></div>
+          <div class="car-info"><div class="car-title"><h3>SUV / Family Car</h3><span class="car-price">LKR <b>18,000</b><small>/ day</small></span></div><div class="car-specs"><span>♙ 5–7 seats</span><span>⚙ Automatic</span><span>⛽ Petrol</span></div><p>Extra room for family plans, luggage and weekend adventures.</p><button class="button button-outline choose-car" data-car="SUV / Family Car">Choose this car <span>→</span></button></div>
+        </article> -->
+      </div>
+      <p class="price-note">* Prices shown are example starting rates and should be confirmed before booking. Availability and final charges are confirmed directly.</p>
+    </section>
+
+    <section class="why-section" id="how-it-works">
+      <div class="why-copy"><p class="eyebrow">MADE FOR YOUR PLANS</p><h2>A smoother way<br>to <em>get there.</em></h2><p>Make a rental enquiry in a few simple steps. We’ll get in touch to confirm the vehicle, dates, availability and final price.</p><a href="#booking" class="text-link">Plan your rental <span>→</span></a></div>
+      <div class="steps">
+        <div class="step"><span class="step-number">01</span><div><h3>Choose your car</h3><p>Browse the available options and select the vehicle that suits your trip.</p></div><span class="step-symbol">↗</span></div>
+        <div class="step"><span class="step-number">02</span><div><h3>Select your dates</h3><p>Tell us when you need the car and how long you plan to rent it.</p></div><span class="step-symbol">▦</span></div>
+        <div class="step"><span class="step-number">03</span><div><h3>Send your enquiry</h3><p>Send your details through WhatsApp and arrange the booking with us.</p></div><span class="step-symbol">✓</span></div>
+      </div>
+    </section>
+
+    <section class="booking-section section" id="booking">
+      <div class="booking-intro"><p class="eyebrow dark-eyebrow">LET'S GET YOU ON THE ROAD</p><h2>Book your <em>next ride.</em></h2><p>Fill in your preferred car and rental dates. Your enquiry will open in WhatsApp so you can send it directly to us.</p><div class="booking-contact"><span class="contact-icon">☎</span><div><small>Prefer to talk?</small><a href="tel:0760579428">076 057 9428</a></div></div></div>
+      <form id="bookingForm" class="booking-form">
+        <div class="form-top"><h3>Rental enquiry</h3><span class="form-required">* Required fields</span></div>
+        <div class="form-grid">
+          <div class="form-group"><label for="fullName">Full name *</label><input id="fullName" name="fullName" type="text" placeholder="Enter your name" required></div>
+          <div class="form-group"><label for="phone">Your phone number *</label><input id="phone" name="phone" type="tel" placeholder="Enter your number" required></div>
+          <div class="form-group full"><label for="carSelect">Preferred car *</label><select id="carSelect" name="car" required><option value="">Select a car</option><option>Audi A6</option><option>Fit Shuttle 2012</option><!-- <option>SUV / Family Car</option> --><option>I'd like advice choosing</option></select></div>
+          <div class="form-group"><label for="pickupDate">Pickup date *</label><input id="pickupDate" name="pickupDate" type="date" required></div>
+          <div class="form-group"><label for="returnDate">Return date *</label><input id="returnDate" name="returnDate" type="date" required></div>
+          <div class="form-group full"><label for="pickupLocation">Pickup location</label><input id="pickupLocation" name="pickupLocation" type="text" placeholder="e.g. Colombo 05"></div>
+          <div class="form-group full"><label for="notes">Additional details</label><textarea id="notes" name="notes" rows="3" placeholder="Anything else we should know? (optional)"></textarea></div>
+        </div>
+        <div id="formMessage" class="form-message" role="status"></div>
+        <button class="button button-primary submit-button" type="submit">Send booking enquiry on WhatsApp <span>↗</span></button>
+        <p class="privacy-note">This is a booking enquiry, not a confirmed reservation. We’ll confirm availability and pricing with you.</p>
+      </form>
+    </section>
+
+    <section class="contact-strip" id="contact"><div><p class="eyebrow">HAVE A QUESTION?</p><h2>Let's talk about your trip.</h2></div><a class="contact-phone" href="tel:0760579428"><span>☎</span><div><small>Call us for more details</small><strong>076 057 9428</strong></div><b>↗</b></a></section>
+  </main>
+
+  
+<footer class="footer">
+  <a class="brand footer-brand" href="#home" aria-label="Santhé Rentals home">
+    <img
+      class="brand-logo footer-logo"
+      src="santhe-logo.png"
+      alt="Santhé Luxury Car Rentals"
+    >
+  </a>
+
+  <p>Good journeys start with the right car.</p>
+
+  <div class="footer-links">
+    <a href="#cars">Our Cars</a>
+    <a href="#booking">Booking Enquiry</a>
+    <a href="tel:0760579428">Call Us</a>
+  </div>
+
+  <small>
+    © <span id="year"></span> Santhé Luxury Car Rentals. All rights reserved.
+  </small>
+</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
